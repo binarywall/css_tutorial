@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The Universal Selectors
+            -----Rather than selecting elements of a specific type, the universal selector quite simply matches the name of any element type:
+        */
+        *{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+        }
+        /* The Type Selectors */
+        p{
+            background-color: aquamarine;
+        }
+        /* The Descendant Selectors 
+        -------Suppose you want to apply a style rule to a particular element only when it lies inside a particular element. 
+        */
+        div p{
+            background-color: blue;
+        }
+        /* The Class Selectors 
+         -------  You can define style rules based on the class attribute of the elements. All the elements having that class will be formatted according to the defined rule.
+        */
+        .class{
+            background-color: blueviolet;
+        }
+        p.class{
+            background-color: rgb(206, 176, 176);
+        }
+        /* The ID Selectors */
+        #div2{
+            background-color: brown;
+        }
+        p#div2{
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="class" id="div1">
+       div 1
+    </div>
+    <div id="div2">
+       div 2
+       <p>
+        para in div
+       </p>
+    </div>
+    <div id="div3">
+       div 3
+    </div>
+    <div id="div3">
+       div 4
+    </div>
+    <p class="class">
+        para 
+    </p>
+    <p id="div2">
+        para 
+    </p>
+</body>
+</html>
