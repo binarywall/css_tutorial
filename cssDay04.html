@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The Child Selectors 
+        --You have seen the descendant selectors. There is one more type of selector, which is very
+similar to descendants but have different functionality. Consider the following example:
+
+        */
+        main>p{
+            background-color: aqua;
+        }
+        p{
+            background-color: aquamarine;
+        }
+        
+        input{
+            height: 30px;
+            width: 200px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: beige;
+        }
+        /* The Attribute Selectors 
+        You can also apply styles to HTML elements with particular attributes. The style rule below
+will match all the input elements having a type attribute with a value of text:
+        */
+        input[type="text"]{
+            background-color: rgb(149, 149, 203);
+        }
+        input[type="email"]{
+            background-color: rgb(234, 112, 205);
+        }
+        /* ------------------ */
+        label{
+            font-size: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: italic;
+            font-weight: bolder;
+        }
+        /* Grouping Selectors 
+            You can apply a style to many selectors if you like. Just separate the selectors with a comma,
+as given in the following example
+        */
+        h1,h2,h3{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <div>
+        <p>
+            para inside div.
+        </p>
+        <main>
+            <p>
+                para inside main.
+            </p>
+        </main>
+    </div>
+    <div>
+        <label for="Name">Name</label>
+        <input type="text" placeholder="name"/>
+        <label for="email">Email</label>
+        <input type="email" placeholder="email" />
+    </div>
+</body>
+</html>
