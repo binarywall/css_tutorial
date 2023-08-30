@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table.one{
+            border-collapse: collapse;
+            empty-cells:hide;
+            
+        }
+        table.two{
+            border-collapse: separate;
+            border-spacing: 10px;
+            
+        }
+        td,th{
+            border: 1px solid ;
+            border-width: 3px;
+            border-color: rgb(144, 39, 39);
+            /* padding: 10px; */
+        }
+        caption.top{caption-side: top;}
+        caption.bottom{caption-side: bottom;}
+        
+        table.layout{
+            border: 1px solid black ;
+            table-layout: fixed;
+        }
+        
+        table.layout>tbody>tr>td{
+            border: 1px solid ;
+            border-width: 1px;
+            border-color: rgb(0, 0, 0);
+            /* padding: 10px; */
+        }
+        
+    </style>
+</head>
+<body>
+    <table class="one">
+        <caption class="right">Table with collapes</caption>
+        <tr>
+            <th>Sr.No</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Fees</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ram</td>
+            <td>CCC</td>
+            <td>3300</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ram</td>
+            <td>CCC</td>
+            <td>3300</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ram</td>
+            <td>CCC</td>
+            <td ></td>
+        </tr>
+    </table>
+    <table class="two">
+        <caption>Table with out collapes</caption>
+        <tr>
+            <th>Sr.No</th>
+            <th>Name</th>
+            <th>Course</th>
+            <th>Fees</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ram</td>
+            <td>CCC</td>
+            <td>3300</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ram</td>
+            <td>CCC</td>
+            <td>3300</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Ram</td>
+            <td>CCC</td>
+            <td></td>
+        </tr>
+    </table>
+    <table class="layout">
+        <tbody>
+            <tr>
+                <td width="70%">121313213213212313213213213212121212132132</td>
+                <td width="30%">Computer</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
