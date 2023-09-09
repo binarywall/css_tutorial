@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .box{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            border-radius: 20px;
+            
+        }
+        span{
+            font-size: 2rem;
+            font-family: Arial, Helvetica, sans-serif;
+            
+            position: relative;
+            vertical-align: middle;
+            
+        }
+        .box1{
+            background: linear-gradient( #FDBB2D 0%, #22C1C3 100%);
+        }
+        .box2{
+            background: linear-gradient(360deg, #FDBB2D 0%, hsl(181, 70%, 45%) 100%);
+        }
+        .box3{
+            background: linear-gradient(to left, #FDBB2D 0%, hsl(181, 70%, 45%) 100%);
+        }
+        .box4{
+            background: linear-gradient(to right, #FDBB2D 0%, hsl(181, 70%, 45%) 100%);
+        }
+    </style>
+</head>
+<body>
+    <!-- Here’s a playground for you to try your hands at. Make sure to use the 4 keyword combination (top, to bottom, to right and to left.). Also note how they affect the gradient. -->
+    <h1>Greadient Color</h1>
+    <div>
+        <div class="flex" style="margin-left: 25px;">
+            <div class="box box1"></div>
+            <span>Top to Bottom</span>
+        
+            <div class="box box2"></div>
+            <span>Bottom to Top</span>
+        </div>
+        <div class="flex">
+            <div class="box box3"></div>
+            <span>To Left</span>
+        
+            <div class="box box4"></div>
+            <span>To Right</span>
+        </div>
+    </div>
+</body>
+</html>
