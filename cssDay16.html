@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parant{
+            height: 300px;
+            width: 50%;
+            border: 2px red solid;
+            margin: 20%;
+            padding: 2%;
+            position: relative;
+        }
+        #div1{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            display: inline-block;
+        }
+        #div2{
+            height: 200px;
+            width: 200px;
+            background-color: rgb(10, 10, 10);
+            display: inline-block;
+            position: absolute;
+            top:50px;
+            left:50px;
+            z-index: -1 ;
+
+        }
+        #div3{
+            height: 200px;
+            width: 200px;
+            background-color: brown;
+            display: inline-block;
+        }
+        #div1:hover{
+            background-color: rgb(150, 150, 238);
+            border: 2px solid black;
+            transition: 10ms linear;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="parant">
+        <div id="div1"></div>
+        <div id="div2"></div>
+        <div id="div3"></div>
+    </div>
+</body>
+</html>
