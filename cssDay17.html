@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS Pseudo Classes */
+        ul{
+            font-size: 2rem;
+        }
+        li:nth-child(3){
+            color: red;
+        }
+        input[type="text"]{
+            width: 30rem;
+            height: 5rem;
+
+        }
+        input[type="text"]:hover{
+            border: 2px solid red;
+        }
+        input[type="text"]:focus{
+            font-size: 2rem;
+            background-color: brown;
+        }
+        /* CSS Pseudo Elements */
+        p::first-letter{
+            font-size: 3rem;
+            color: blue;
+            font-weight: bold;
+        }
+        p::first-line{
+            font-size: 3rem;
+            color: #a6a6a6;
+            font-weight: 700;
+        }
+        h1::before{
+            content: "this is a befoer ";
+            color: #625856;
+        }
+        h1::after{
+            content: url(data:image/png;base64,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);
+            
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+    </ul>
+    <input type="text">
+    <div>
+        <h1>Pseudo Elements</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab eos saepe, veniam tenetur corporis fuga eaque quo quae recusandae, autem sapiente natus accusamus sequi libero dolore illum dicta temporibus! Porro libero amet sunt. Cupiditate quam accusantium suscipit dolorum quae assumenda veritatis natus. Blanditiis placeat magnam fuga ducimus libero doloremque corporis a dolorum sit at, totam repellendus eius molestiae cum dicta aut. Optio tempore in nulla aperiam dolore saepe quasi maiores voluptates labore facere quod ea iste neque non exercitationem perferendis, hic temporibus. Reprehenderit aliquam recusandae hic magnam aperiam, harum eveniet earum tempore facilis atque totam! Quae deserunt aperiam quis accusamus. Est ab ipsam soluta doloremque illum. Ratione pariatur eveniet animi labore consectetur praesentium ducimus, officia, provident aperiam, ullam nisi atque incidunt. Fugiat iusto nisi corrupti sint error voluptatibus eligendi! Voluptatibus, sunt! Exercitationem odit ducimus est eligendi, aut necessitatibus maxime laborum ut officia autem harum a facilis! Totam recusandae incidunt, quisquam dolor iure placeat corporis facere. Explicabo iusto ratione, consequuntur ipsa similique porro doloribus magni illum tempora sed esse? Illum dolore vitae, blanditiis voluptates laudantium expedita incidunt illo sint impedit repellat consequatur, quo laboriosam odit error unde labore aut delectus voluptatum non ipsa assumenda. Earum dicta pariatur magni voluptas similique sint, tenetur delectus repellendus quos eius non voluptatem. Repellendus velit maxime ratione accusantium iure omnis ea quas voluptatum nisi voluptate. Alias necessitatibus assumenda facilis eaque sunt, quibusdam aperiam magni odio provident cum rem, commodi sed molestiae sint itaque tenetur. Maxime consequatur et exercitationem mollitia debitis molestiae nam architecto tempora provident possimus eius sapiente obcaecati eum nostrum, fuga veritatis, voluptatem porro illo cum asperiores iste? Eligendi hic voluptatum reiciendis consectetur, consequuntur, repellendus iusto similique at inventore unde mollitia iure libero laborum cupiditate? Magni delectus commodi ex. Nihil unde accusantium pariatur dolor molestiae in commodi nobis culpa, labore, placeat nulla a. Voluptates vero cum repellendus officia, praesentium ab eveniet odit tempora. Rem inventore, facere ullam voluptate, beatae repellendus eveniet nobis explicabo consectetur odio debitis nihil ab ipsa unde optio minus eum facilis laborum! Eum perspiciatis possimus deleniti, autem incidunt aliquam aperiam, cumque vero similique tempore, facere minus cum. Ea natus ducimus, alias ipsam dicta inventore expedita minima, tenetur, est quidem optio nesciunt non. Iusto praesentium, commodi veritatis inventore non, officia fugiat est numquam minus maiores velit voluptatibus esse exercitationem vel sunt animi aperiam consequatur suscipit at reprehenderit itaque, error similique. Sunt, ut tempore delectus magnam repudiandae ullam nam dolores animi ipsa maxime alias quam doloremque ex velit, veniam exercitationem explicabo distinctio qui eius quo id expedita laboriosam? Earum itaque magnam reprehenderit. Nam magnam consectetur aspernatur, nostrum nobis qui sint dolorem saepe eveniet reprehenderit omnis cum, a temporibus quae ea quibusdam ex et quis sit maxime aliquid? Cupiditate amet dolorum, sunt facere explicabo temporibus. Enim, tempore velit beatae fugit sint expedita delectus quod quibusdam doloremque impedit omnis accusamus fugiat animi deleniti reprehenderit perferendis. Quo soluta animi sapiente impedit, ratione suscipit in nobis sit temporibus ut ducimus dolorem officia at veritatis blanditiis ullam similique! Dicta inventore laborum dolores saepe error maiores blanditiis. Sequi eum tempora deserunt! Repellendus, voluptatibus quae aspernatur ad atque laboriosam minus ipsam modi quidem hic magni saepe, quibusdam iusto nihil impedit molestias repellat tempore corrupti error! Quidem cumque iure aperiam, fugit inventore reiciendis est repudiandae mollitia laboriosam numquam dolore dignissimos dolorem explicabo molestias quasi nemo qui optio iusto vel minima ea. Soluta tempora voluptate natus dolor odit iure eaque sint libero, alias officiis debitis voluptatem itaque eligendi, fugiat placeat modi commodi suscipit in. Ut natus itaque corporis recusandae dolore, tempora eaque ipsa tenetur consequatur numquam saepe? Velit in perspiciatis, sapiente aspernatur quaerat explicabo quis blanditiis cum asperiores exercitationem at dignissimos atque voluptas autem molestias quas ipsum consequatur temporibus fuga optio! Ipsam accusamus quidem assumenda, voluptatum laudantium corrupti amet aperiam? Praesentium earum deleniti illum. Inventore totam quidem vero numquam quis, tempora aliquid sequi quaerat ratione. Aliquam unde asperiores ipsam incidunt error eum praesentium. Nisi aperiam nostrum dolor asperiores esse facere, eveniet doloremque tempora nulla neque nemo quo magnam ut quaerat laborum inventore obcaecati repudiandae dolores. Harum cumque minima sed eius iure odio beatae ipsa molestiae architecto laboriosam! Cupiditate nobis inventore quod maiores corporis? Magni fugit exercitationem recusandae accusantium, est quo minus deserunt, quod et harum facilis doloribus mollitia consequatur quisquam quos corrupti assumenda, beatae excepturi quia! Exercitationem odio, delectus quaerat temporibus a voluptatem eos quam laboriosam fugit necessitatibus aliquid dolores dolore accusantium ab incidunt natus, distinctio sunt, repellat provident optio doloremque blanditiis et iusto. Recusandae voluptatem doloremque culpa ducimus facere suscipit aliquid laudantium consequuntur? Omnis odit maiores labore repellendus tenetur molestias necessitatibus obcaecati vitae dolore voluptates eveniet impedit quia laudantium blanditiis illum in facere tempore cumque debitis, delectus inventore quasi sunt laboriosam provident. Ullam quos quis veniam! Debitis velit impedit amet tenetur, eveniet ratione magnam nostrum quos! Animi alias harum veritatis esse quae totam temporibus sequi tempore fugiat corporis fugit quidem aspernatur perferendis non, culpa praesentium aliquam? Placeat, quos tempore soluta adipisci veniam eveniet dolorum excepturi delectus quis maiores reprehenderit ipsa earum, optio, consectetur laborum accusamus iusto. Iusto cumque nulla atque eveniet at hic facere sed, totam in natus illo laborum ducimus laudantium, unde quasi voluptas quae culpa. Cumque, autem? Eaque maiores nobis doloribus vero porro autem magnam veritatis ducimus deserunt minima mollitia blanditiis, suscipit, voluptatum perspiciatis incidunt veniam. Quas, exercitationem perspiciatis cupiditate ipsum unde molestiae distinctio fugiat reprehenderit animi quos eos laboriosam repudiandae saepe recusandae cumque repellendus minima dolorum sequi aspernatur quisquam nostrum sunt fugit. Inventore quos culpa incidunt molestiae, maiores excepturi eveniet nam ipsum reiciendis. Amet labore praesentium provident dolores iure quod aperiam? Cum recusandae labore veritatis voluptatum ab architecto nemo dolor vero odit at? Numquam maxime, consequatur eum libero hic nisi molestiae sit, rem cum assumenda ullam nesciunt neque? Nam ab unde aperiam deleniti ullam. Vel reiciendis pariatur doloribus cumque rem neque, enim, accusamus nostrum deleniti assumenda labore! Velit perferendis adipisci possimus laudantium et quasi ex. Soluta, explicabo! Beatae dolore, debitis molestias adipisci numquam quas delectus veritatis laborum asperiores tenetur facilis, impedit velit aliquid esse nulla dolorum veniam ipsa! Id asperiores fugiat quia eaque voluptate quo qui vero exercitationem sequi.
+        </p>
+    </div>
+</body>
+</html>
