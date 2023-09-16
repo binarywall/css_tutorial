@@ -1,0 +1,27 @@
+/* @import  url('color.css'); */
+
+@import 'color.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+
+@font-face {
+    font-family: 'myFirstFont';
+    src: url('./Fuggles-Regular.ttf') format('truetype');
+}
+
+*{
+    font-family: 'myFirstFont';
+    font-size: 3rem;
+}
+
+div>table{
+    margin-left: 25%;
+    margin-right: 25%
+}
+.menu{
+    border: 1px solid;
+    margin: 5px;
+    padding: 5px;
+    color: #fff;
+    font-family: 'myFirstFont';
+}
