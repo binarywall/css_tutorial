@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body,html{
+            width: 100%;
+            height: 100%;
+        }
+        #main{
+           margin-left: 10%;
+            width: 80%;
+            height: 400px;
+            /* background-color: bisque; */
+        }
+
+        #main h1{
+            font-size: 3rem;
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        #main .text, .img{
+            width: 50%;
+            height: 90%;
+            float: left;
+            border: 1px solid black;
+        }
+        .text p{
+            font-size: 1.2rem;
+            text-align: justify;
+            padding: 10px;
+        }
+
+        .img img{
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+        }
+
+        @media (max-width:786px) {
+            #main{
+                display: flex;
+                flex-direction: column;
+            }
+
+            #main .text{
+                width: 100%;
+            }
+            #main .img{
+                width: 100%;
+            }
+
+            #main h1{
+            font-size: 1rem;
+            color: red;
+            text-align: center;
+            padding: 10px 20px;
+            }
+
+            .text p{
+            font-size: 12px;
+            text-align: justify;
+            padding: 6px;
+            
+            }
+        }
+
+        @media print{
+            #main h1::after{
+                content: "This is a print Media";
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h1>CSS Media Queries</h1>
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias in earum aliquid quae alias temporibus facere mollitia libero blanditiis velit. Cum voluptate error ipsum nulla ducimus, id deserunt, libero adipisci deleniti accusamus ad iure animi tenetur tempora accusantium, aspernatur distinctio aut veritatis recusandae alias quod totam nihil perferendis. Necessitatibus eveniet vero sequi ratione, commodi soluta nihil molestias? Magnam enim a vero, labore nemo incidunt ex. Iste, iusto qui doloribus quo sed amet eveniet eos quam hic delectus voluptates. Asperiores, mollitia atque error veritatis voluptatem adipisci provident vitae, earum amet harum delectus similique illum voluptatibus itaque quos perspiciatis excepturi repudiandae aliquid.</p>
+        </div>
+        <div class="img">
+            <img src="img/sc.png" alt="">
+        </div>
+    </div>
+</body>
+</html>
